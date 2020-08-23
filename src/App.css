@@ -14,8 +14,8 @@ body {
 
 button {
     font-family: 'Press Start 2P', cursive;
-    display: block;
-    margin: 0 auto;
+/*    display: inline-block;*/
+    margin: 0 20px;
     border: none;
     background: #a80020;
     background: #00b800;
