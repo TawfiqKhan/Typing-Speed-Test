@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Typing-Speed-Test/static/css/main.56e97434.chunk.css",
-    "main.js": "/Typing-Speed-Test/static/js/main.bb824b78.chunk.js",
-    "main.js.map": "/Typing-Speed-Test/static/js/main.bb824b78.chunk.js.map",
+    "main.css": "/Typing-Speed-Test/static/css/main.653a34c1.chunk.css",
+    "main.js": "/Typing-Speed-Test/static/js/main.3796c435.chunk.js",
+    "main.js.map": "/Typing-Speed-Test/static/js/main.3796c435.chunk.js.map",
     "runtime-main.js": "/Typing-Speed-Test/static/js/runtime-main.6a58e7af.js",
     "runtime-main.js.map": "/Typing-Speed-Test/static/js/runtime-main.6a58e7af.js.map",
     "static/js/2.540466b3.chunk.js": "/Typing-Speed-Test/static/js/2.540466b3.chunk.js",
     "static/js/2.540466b3.chunk.js.map": "/Typing-Speed-Test/static/js/2.540466b3.chunk.js.map",
     "index.html": "/Typing-Speed-Test/index.html",
-    "precache-manifest.67e64e75c0741f0943b95f365c90dfc4.js": "/Typing-Speed-Test/precache-manifest.67e64e75c0741f0943b95f365c90dfc4.js",
+    "precache-manifest.e95e9e35182b87ca51453379ebd74540.js": "/Typing-Speed-Test/precache-manifest.e95e9e35182b87ca51453379ebd74540.js",
     "service-worker.js": "/Typing-Speed-Test/service-worker.js",
-    "static/css/main.56e97434.chunk.css.map": "/Typing-Speed-Test/static/css/main.56e97434.chunk.css.map",
+    "static/css/main.653a34c1.chunk.css.map": "/Typing-Speed-Test/static/css/main.653a34c1.chunk.css.map",
     "static/js/2.540466b3.chunk.js.LICENSE.txt": "/Typing-Speed-Test/static/js/2.540466b3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6a58e7af.js",
     "static/js/2.540466b3.chunk.js",
-    "static/css/main.56e97434.chunk.css",
-    "static/js/main.bb824b78.chunk.js"
+    "static/css/main.653a34c1.chunk.css",
+    "static/js/main.3796c435.chunk.js"
   ]
 }
