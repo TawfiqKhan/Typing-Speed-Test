@@ -1,81 +1,50 @@
-import "./App.css";
 import React, { useState, useEffect, useRef } from "react";
+import useGameLogic from "./useGameLogic";
 import Button from "./Button";
+import "./App.css";
 
-function App() {
-    let STARTING_TIME = 15;
+const App = () => {
+	const {
+		textAreaRef,
+		text,
+		handleChange,
+		gameRunning,
+		time,
+		startGame,
+		wordCount,
+	} = useGameLogic();
 
-    const [text, setText] = useState("");
-    const [timeRemaining, setTimeRemaining] = useState(STARTING_TIME);
-    const [isTimeRunning, setIsTimeRunning] = useState(false);
-    const [wordCount, setWordCount] = useState(0);
-    const textAreaRef = useRef();
+	return (
+		<div>
+			<h1>Speed Typing Game</h1>
+			<textarea
+				ref={textAreaRef}
+				value={text}
+				onChange={handleChange}
+				disabled={!gameRunning}
+			/>
+			<h3>Choose your desired test time</h3>
+			<Button
+				gameTime={30}
+				startGame={startGame}
+				gameRunning={gameRunning}
+			/>
+			<Button
+				gameTime={45}
+				startGame={startGame}
+				gameRunning={gameRunning}
+			/>
+			<Button
+				gameTime={60}
+				startGame={startGame}
+				gameRunning={gameRunning}
+			/>
 
-    const handleChange = (e) => {
-        const { value } = e.target;
-        setText(value);
-    };
-
-    const calculateWordCount = (text) => {
-        const wordsArr = text.trim().split(" ");
-        return wordsArr.filter((word) => word !== "").length;
-    };
-
-    const startGame = (time) => {
-        setIsTimeRunning(true);
-        setTimeRemaining(time);
-        setText("");
-        setWordCount(0);
-        textAreaRef.current.disabled = false;
-        textAreaRef.current.focus();
-    };
-
-    const endGame = () => {
-        setIsTimeRunning(false);
-        setWordCount(calculateWordCount(text));
-    };
-
-    useEffect(() => {
-        if (isTimeRunning && timeRemaining > 0) {
-            setTimeout(() => {
-                setTimeRemaining((time) => time - 1);
-            }, 1000);
-        } else if (timeRemaining === 0) {
-            endGame();
-        }
-    }, [timeRemaining, isTimeRunning]);
-
-    return (
-        <div>
-            <h1>How fast do you type?</h1>
-            <textarea
-                ref={textAreaRef}
-                onChange={handleChange}
-                value={text}
-                disabled={!isTimeRunning}
-            />
-            <Button
-                time={30}
-                startGame={startGame}
-                isTimeRunning={isTimeRunning}
-            />
-            <Button
-                time={60}
-                startGame={startGame}
-                isTimeRunning={isTimeRunning}
-            />
-            <Button
-                time={90}
-                startGame={startGame}
-                isTimeRunning={isTimeRunning}
-            />
-            <h4>Time remaining: {timeRemaining}</h4>
-
-            <Button startGame={startGame} isTimeRunning={isTimeRunning} />
-
-            <h1>Word count: {wordCount}</h1>
-        </div>
-    );
-}
+			<h2>Time Remaining: {time} sec</h2>
+			<Button startGame={startGame} gameRunning={gameRunning} />
+			<h4>Total Words: {wordCount} </h4>
+		</div>
+	);
+};
 
 export default App;
