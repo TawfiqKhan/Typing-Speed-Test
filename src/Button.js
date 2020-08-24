@@ -8,7 +8,7 @@ const Button =(props)=> {
 				}}
 				disabled = {props.gameRunning}
 			>
-			{props.gameTime ? `${props.gameTime} Sec` : "Start;"}</button>
+			{props.gameTime ? `${props.gameTime} Sec` : "Start"}</button>
 		)
 }
 
