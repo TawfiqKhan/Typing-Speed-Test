@@ -1,68 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Typing Speed Test
 
-## Available Scripts
+The app was created as a project for the Enterprise Web and Mobile Developer [diploma](https://www.trios.com/programs-courses/technology/enterprise-web-and-mobile-developer/) of triOS Collge.
 
-In the project directory, you can run:
 
-### `npm start`
+## About the App
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The App was built using React and it tests users typing speed. Modern React Concept such as React Hooks(State, Ref, Context) were used in the making of the App. A Demo version of the game can be seen here [Typing Speed Test](https://special3220.github.io/Typing-Speed-Test/)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Instruction of How to Start
 
-### `npm test`
+To get started you you need to do the following
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone or download the repository.
+2. Open a terminal in project directory. If node.js is installed, you can use git bash as well
+3. Run npm install. Based on the dependencies required it may take a while
+4. Run npm start. This is will launch a local server.
+5. You can then view the app by visiting http://localhost:3000
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Gameplay
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+You can click on the start button and start typing immediately. The default game time is 15 sec and once that runs out the total wors counts will show up at the bottom of the page. There are also options to choose between 30 sec to 1.30 min of typing.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Creator
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Md Tawfiqul Hasan Khan a Student of Enterprise Web and Mobile Developer program at triOS Collge.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
